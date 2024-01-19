@@ -26,6 +26,8 @@ router.delete("/employees/:id", EmployeeController.destroy);
 router.get("/employees/:id", EmployeeController.show);
   // Mencari data secara detail {name}
 router.get('/search/:name', EmployeeController.search);
+  // Mencari data secara detail {status}
+router.get('/status/:status', EmployeeController.status);
 
 
 // export router

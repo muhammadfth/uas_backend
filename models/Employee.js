@@ -74,7 +74,20 @@ class Employee {
             resolve(results[0]);
         });
     });
-}
+    }
+
+    static status(status) {
+        return new Promise((resolve, reject) => {
+            const sql = "SELECT * FROM employees WHERE status = ?";
+            db.query(sql, status, (err, results) => {
+            if (err) {
+                    reject(err);
+            } else {
+                resolve(results);
+            }
+        });
+    });
+    }
 }
 
 // export class Employee

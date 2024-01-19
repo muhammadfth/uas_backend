@@ -197,7 +197,7 @@ class EmployeeController {
 
     async search(req, res) {
     /**  
-    cari id
+    cari sesuai nama
     jika ada, kirim datanya
     jika tidak, kirim data tidak ada*/
     const { name } = req.params;
@@ -221,6 +221,33 @@ class EmployeeController {
         }
     
     }
+
+    async status(req, res) {
+        /**  
+        cari sesuai status
+        jika ada, kirim datanya
+        jika tidak, kirim data tidak ada*/
+        const { status } = req.params;
+        
+            const employee = await Employee.status(status);
+        
+            if (employee) {
+                const data = {
+                    message: "Menampilkan detail data pegawai berdasarkan status",
+                    data: employee,
+                };
+        
+                res.status(200).json(data);
+            }
+            else {
+                const data = {
+                    message: "Data tidak ditemukan",
+                };
+        
+                res.status(404).json(data);
+            }
+        
+        }
 }
 
 // membuat object EmployeeController
