@@ -51,7 +51,7 @@ INSERT INTO `employees` (`id`, `name`, `gender`, `phone`, `address`, `email`, `s
 (6, 'Muhammad Faisal Nurhakim', 'Laki-Laki', '084252511', 'Jl Pondok Cina', 'ical@gmail.com', 'inactive', '2022-08-12', '2024-01-19 03:54:51'),
 (7, 'Rizki Ahmad Fauzi', 'Laki-Laki', '088214111', 'Jl Jonggol', 'fauzi@gmail.com', 'inactive', '2022-08-12', '2024-01-19 03:54:56'),
 (8, 'Siti Nur Halizah', 'Perempuan', '0852131122', 'Jl Parung', 'siti@gmail.com', 'inactive', '2024-01-01', '2024-01-19 03:55:00'),
-(9, 'Aisyah Hanani', 'Perempuan', '080912845', 'Jl Pekansar', 'aisyah@gmail.com', 'active', '2024-01-01', '2024-01-19 03:55:10');
+(9, 'Aisyah Hanani', 'Perempuan', '080912845', 'Jl Pekansar', 'aisyah@gmail.com', 'terminated', '2024-01-01', '2024-01-19 03:55:10');
 
 --
 -- Indexes for dumped tables
